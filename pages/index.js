@@ -70,7 +70,7 @@ export default function Home() {
           <h3 className="text-center">Berilgan so'zning o'zbekcha tarjimasini toping</h3>
           <div className="d-flex align-items-center">
             <img src={misol[misolNumber].img} alt="?" style={{ width: "40%" }} />
-            <div className="d-flex align-items-center w-50 border px-3 py-2" style={{ borderRadius: "15px" }}>
+            <div className="d-flex align-items-center w-50 border px-3 py-2 misol" style={{ borderRadius: "15px" }}>
               <Button className="fs-4 me-2 text-primary" onClick={talk}><FontAwesomeIcon icon={faVolumeUp} /></Button>
               <p className="m-0 fs-4">{misol[misolNumber].english}</p>
             </div>
@@ -91,7 +91,7 @@ export default function Home() {
           }
         </div>
         <div className="col-12 d-flex align-items-center justify-content-between p-3 answer">
-          <p className="m-0">{javob}</p>
+          <p className="m-0 fw-bold">{javob}</p>
           <div>
             {nextButton && isEnd == false && <Button variant="contained" color="primary" onClick={next} className="next">Keyingisi</Button> || isEnd == false && <Button variant="contained" color="secondary" onClick={answer}>Tekshirish</Button>}
           </div>

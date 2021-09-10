@@ -22,3 +22,19 @@ a {
 .next{
   background-color: #198754 !important;
 }
+
+.misol{
+  position: relative;
+}
+
+.misol::before, .misol::after {
+  content: ''; 
+  position: absolute;
+  left: -5.5%; bottom: 29%;
+  border: 10px solid transparent;
+  border-right: 10px solid grey;
+ }
+ .misol::after {
+  border-right: 10px solid white;
+  bottom: 29%; 
+ }
