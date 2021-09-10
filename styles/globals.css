@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.answer{
+  background-color: rgba(166, 166, 241, 0.3);
+}
+
+.next{
+  background-color: #198754 !important;
+}
